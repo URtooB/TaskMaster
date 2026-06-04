@@ -44,13 +44,13 @@ class TaskManager:
 # TEST CODE
 if __name__ == "__main__":
     manager = TaskManager()
-    manager.add_task("Finish Python project skeleton", "High")
-    manager.add_task("Buy groceries", "Low")
-    manager.add_task("Read 10 pages of a book")
+    manager.add_task("Test1", "High")
+    manager.add_task("Test2", "Low")
+    manager.add_task("Test3")
 
     manager.list_all_tasks()
 
-    print("Marking task 1 as complete...")
+    print("Task1 complete...")
     manager.tasks[0].mark_complete()
 
     manager.list_all_tasks()
